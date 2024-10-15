@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Vishnu" />
+    <meta name="description" content="This is an HTML Course" />
+    <meta name="keywords" content="Portfolio, HTML, HTML5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="animation-container">
+        <div class="burst">
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="sticky">
+
+        <div class="header">
+            <a href="#" class="name">Vishnu V </a>
+            <nav>
+                <ul>
+                    <ul id="sidemenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#mywork">My Work</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <section id="home">
+        <h1>&nbsp;</h1>
+
+        <div class="home-content">
+
+            <div>
+                <h1>I'm <span title="heding-span">Vishnu V</span></h1>
+                <p>I am a recent BCA graduate with a strong foundation in web development and programming.<br>
+                    I have hands-on experience in HTML, CSS, JavaScript, and React, as well as a solid understanding of
+                    SQL
+                    and .NET technologies.<br>
+                    I developed a project named "Do U KNOW" using React, showcasing my skills in front-end development
+                    and
+                    UI design.<br>
+                    I am eager to apply my knowledge and skills to contribute to innovative projects in a dynamic work
+                    environment.<br>
+                    My goal is to continue growing as a developer and to be part of a team that challenges me to learn
+                    and
+                    excel.</p>
+                <button> <a href="VISHNU V.pdf">DOWNLOAD CV</a> </button>
+            </div>
+
+            <div class="bg"> &nbsp; <img src="image.png" alt="image" class="home-img" /></div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about">
+            <h1 target="heding">About &nbsp;<span title="heding-span"> Me</span></h1>
+            <br>
+            <br>
+            <div id="box" class="about-box">
+                <div class="about-card">
+                    <h1>I’m <span title="span">Full Stack Developer</span></h1>
+                    <ul>
+                        <li>I'm always ready to challenge myself and explore new areas of work.</li>
+                        <li>I never stop learning and for me, each new project is another adventure.</li>
+                        <li>Looking for a challenging role in the IT sector to enhance skills and grow in the same</li>
+                        <li>I'm able to work in the 3 major areas of web development:<span
+                                title="span">Frontend,Backend,</span> and the <span title="span"> Database</span>.</li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <img src="boy-with-rope.png" alt="boy-image" class="about-img" id="reloadImage" />
+
+            </div>
+
+            <br>
+            <br>
+            <h1 title="sub-heading">Lin <span title="span">ks</span></h1>
+
+            <div class="about-links">
+                <li>
+                    <h1> <a href="https://www.linkedin.com/in/vishnu-vijayakumar-893925221/" class="app-img1">
+                            <i class="fab fa-linkedin"></i> Linkedin</a>
+                    </h1>
+                </li>
+                <li>
+                    <h1> <a href="https://github.com/VishnusIdea" target="_blank" class="app-img2">
+                            <i class="fab fa-github-square"></i> Github</a> </h1>
+                </li>
+                <li>
+                    <h1> <a href="mailto:vishnuvijayakumar25vv@gmail.com?subject=Hey Vishnu V,  I visited your website&body=Hello"
+                            target="_blank" class="app-img3"><i class="far fa-envelope"></i> Email</a> </h1>
+                </li>
+            </div>
+
+            <br>
+            <br>
+
+
+            <h1 title="sub-heading">My &nbsp;<span title="span">Skills</span></h1>
+            <br>
+            <br>
+
+
+
+            <div class="about-skills">
+                <div class="skills-titles">
+                    <p id="Languages-link" class="title-link" onclick="setActiveTab('Languages')">Languages</p>
+                    <p id="Frontend-link" class="title-link" onclick="setActiveTab('Frontend')">Frontend</p>
+                    <p id="Backend-link" class="title-link" onclick="setActiveTab('Backend')">Backend</p>
+                </div>
+
+                <div class="details">
+                    <div id="Languages" class="skills-contents ">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="skills-circle"></div>
+                                    <img src="c++-logo.jpg" alt=" logo" class="skills-img" />
+                                </td>
+                                <td>
+                                    <div class="skills-circle"></div>
+                                    <img src="c sharp.png" alt="logo" class="skills-img" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="Frontend" class="skills-contents">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="skills-circle"></div>
+                                    <img src="HTML-Logo.png" alt="Frontend logo" class="skills-img" />
+                                </td>
+                                <td>
+                                    <div class="skills-circle"></div>
+                                    <img src="css-Logo.jpg" alt="Frontend logo" class="skills-img" />
+                                </td>
+                                <td>
+                                    <div class="skills-circle"></div>
+                                    <img src="JavaScript-logo.png" alt="logo" class="skills-img" />
+                                </td>
+                                <td>
+                                    <div class="skills-circle"></div>
+                                    <img src="react-Logo.png" alt="Frontend logo" class="skills-img" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="Backend" class="skills-contents">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="skills-circle"></div>
+                                    <img src="api-logo.jpg" alt="Backend logo" class="skills-img" />
+                                </td>
+                                <td>
+                                    <div class="skills-circle"></div>
+                                    <img src="firestore-Logo.jpg" alt="Backend logo" class="skills-img" />
+                                </td>
+
+                                <td>
+                                    <div class="skills-circle"></div>
+                                    <img src="sql-logo.jpg" alt=" logo" class="skills-img" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="full-img" id="fullImgBox">
+        <span onclick="closeFullImg()">X</span>
+        <div class="imagebox">
+            <div class="textdata">
+                <h3 id="boxheading">This is my final year project</h3>
+                <p id="content">Frontend is react then backend is SQL</p>
+            </div>
+            <div class="contanier-view">
+                <table>
+                    <tr>
+                        <td class="cards">
+                            <img src="slide1.png" alt="output" id="img1">
+                        </td>
+                        <td class="cards">
+                            <img src="slide2.png" alt="output" id="img2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cards">
+                            <img src="slide3.png" alt="output" id="img3">
+                        </td>
+
+                        <td class="cards">
+                            <img src="slide4.png" alt="output" id="img4">
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="mywork">
+        <div class="work">
+
+            <h1 target="heding">My &nbsp;<span title="heding-span"> Work</span></h1>
+
+            <div class="work-viewport">
+
+                <ol class="image-viweport">
+                    <li class="slide">
+                        <div class="img-gallery">
+                            <div class="snapper" style="background-image: url(slide1.png) ;" id="clilck1"
+                                onclick="loddata(0)">   </div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <div class="snapper" style="background-image: url(slide2.png) ;" onclick="loddata(1)"> </div>
+                    </li>
+                    <li class="slide">
+                        <div class="snapper" style="background-image: url(slide3.png) ;" onclick="loddata(2)"> </div>
+                    </li>
+                    <li class="slide">
+                        <div class="snapper" style="background-image: url(slide4.png) ;" onclick="loddata(3)"></div>
+                    </li>
+                    <li class="slide">
+                        <div class="snapper" style="background-image: url(slide5.png) ;" onclick="loddata(4)"> </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+
+        <h1 target="heding">Contact &nbsp;<span title="heding-span" ing-sp> Me</span></h1>
+        <div class="contact">
+
+            <div class="contact-form">
+                <h2>Send your Reviews through this form</h2>
+                <form id="contactForm" name="submit-to-google-sheet" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="thankYouMessage" style="display:none;">
+                    <p>Thank you for visiting this webpage!</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <div class="footer">
+        <h3>&copy; Made by <span title="heding-span">Vishnu V </span> with. HTML, CSS and JavaScript.</h3>
+
+        <a href="https://www.linkedin.com/in/vishnu-vijayakumar-893925221/">
+            <i class="fab fa-linkedin"></i></a>
+
+        <a href="https://github.com/VishnusIdea">
+            <i class="fab fa-github-square"></i> </a>
+
+        <a href="mailto:vishnuvijayakumar25vv@gmail.com?subject=Hey Vishnu V,  I visited your website&body=Hello">
+            <i class="far fa-envelope"></i></a>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

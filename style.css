@@ -1,0 +1,831 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Holtwood+One+SC&family=Protest+Guerrilla&family=Russo+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(52deg, rgb(255, 131, 0), white);
+}
+
+.burst {
+  position: absolute;
+}
+
+.burst .line {
+  position: absolute;
+  background: rgb(239, 188, 143);
+  padding: 5px 7px;
+  border-radius: 52%;
+}
+
+.burst .line:nth-child(1) {
+  animation: move01 1.5s linear infinite;
+}
+
+@keyframes move01 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translate(0, -50px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, -100px);
+    opacity: 0;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  background: #ffffff54;
+  border: 2px solid orange;
+  height: 90px;
+}
+
+.name {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-decoration: none;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(239, 188, 143));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Bungee Shade", sans-serif;
+}
+
+div.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  font-family: "Protest Guerrilla", sans-serif;
+  display: block;
+  color: rgb(255, 132, 23);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/*  ------------------------------------    home    ---------------------------  */
+
+.home-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20% 40px;
+}
+
+.greet {
+  margin: 9px;
+}
+
+.home-content p {
+  font-family: "Cuprum", sans-serif;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.home-content h1 {
+  font-family: "Russo One", sans-serif;
+}
+
+[title~="heding-span"] {
+  color: rgb(255, 132, 23);
+}
+
+.home-img {
+  width: 80%;
+  background-color: rgb(255, 132, 23);
+  border-radius: 50% 10px;
+  border: 7px solid white;
+}
+
+.bg {
+  background-color: rgb(255, 132, 23);
+  height: 300px;
+  width: 15%;
+  border-radius: 30% 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.home-content button {
+  background: rgb(255, 132, 23);
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.home-content button a {
+  color: rgb(255, 255, 255);
+}
+
+/* ------------------------------    About--------------------------- */
+
+h1[target] {
+  display: flex;
+  justify-content: center;
+  font-family: "Protest Guerrilla", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+[title~="span"] {
+  color: rgb(255, 255, 255);
+}
+
+[title~="sub-heading"] {
+  color: rgb(255, 0, 0);
+  display: flex;
+  justify-content: center;
+  font-family: "Russo One", sans-serif;
+}
+
+.about {
+  line-height: 30px;
+  background-image: url(background.png);
+  padding: 115px;
+}
+
+.about-box {
+  display: flex;
+  transform: translateX(-600px);
+  transition: transform 1.5s linear;
+}
+
+.about-card {
+  box-shadow: rgb(0, 0, 0) 0px 0px 10px 5px;
+  background: linear-gradient(180deg, #ffffffb8, rgb(255, 132, 23));
+  padding: 50px 40px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 30px;
+  font-family: "Russo One", sans-serif;
+}
+
+.about-img {
+  cursor: pointer;
+  margin: 20px 3px;
+  filter: drop-shadow(6px 5px 1px rgb(255, 132, 32));
+}
+
+/* ------------------------------    About links--------------------------- */
+
+.about-links {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  flex-direction: column;
+  line-height: 100px;
+  font-size: 25px;
+}
+
+.app-img1 {
+  background-image: url("linkedin-img.gif");
+  font-family: "Holtwood One SC", serif;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  font-size: larger;
+}
+
+.app-img2 {
+  background-image: url("github-img.gif");
+  font-family: "Holtwood One SC", serif;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  font-size: larger;
+}
+
+.app-img3 {
+  background-image: url("gmail-img.gif");
+  font-family: "Holtwood One SC", serif;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  font-size: larger;
+}
+
+/* ------------------------------ about skills --------------------*/
+
+.about-skills {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills-titles {
+  display: flex;
+  flex-direction: column;
+  line-height: 130px;
+  color: rgb(255, 132, 32);
+  text-transform: uppercase;
+
+}
+
+.title-link {
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  font-family: "Russo One", sans-serif;
+}
+
+.active-link {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.title-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: rgb(255, 132, 32);
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  transition: 0.5s;
+}
+
+.title-link.active-link::after {
+  width: 100%;
+}
+
+.skills-contents {
+  display: none;
+}
+
+.skills-contents td {
+  padding: 8px;
+  width: 160px;
+}
+
+.skills-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 5px solid rgb(255, 255, 255);
+  border-top-color: rgb(255, 132, 32);
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.skills-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.active-tab {
+  display: block;
+}
+
+.details {
+  margin: 0px;
+}
+
+/* ------------------------------ work  --------------------*/
+
+.work {
+  height: 100vh;
+  background-image: url(background.png);
+}
+
+.work-viewport {
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.image-viweport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.work-viewport::before,
+.work-viewport::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  translate: -50% 0;
+  width: 300%;
+  height: 500%;
+  border-radius: 50%;
+  background-image: url(background.png);
+}
+
+.work-viewport::before {
+  top: -480%;
+}
+
+.work-viewport::after {
+  bottom: -480%;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 33.33%;
+  width: 33.33%;
+}
+
+.snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+  background-size: cover;
+  background-position: 50%;
+  border: 10px solid #000000;
+}
+
+.cards img {
+  width: 300px;
+  height: 300px;
+}
+
+.cards {
+  width: 200px;
+  height: 300px;
+  transition: 300ms ease-in-out;
+  box-shadow: 0px 5px 10px 0px #0a0a0a7c;
+}
+
+.cards+.cards {
+  margin-left: 1%;
+}
+
+.cards:hover {
+  transform: rotate(-6deg);
+}
+
+.cards:hover~.cards {
+  translate: 80px;
+}
+
+.textdata h3 {
+  color: rgb(255, 132, 32);
+  width: 70%;
+  line-height: 50px;
+  font-family: "Holtwood One SC", serif;
+  font-size: larger;
+}
+
+.textdata p {
+  color: rgb(255, 254, 253);
+  width: 85%;
+  line-height: 41px;
+  font-size: 20px;
+}
+
+.imagebox {
+  display: flex;
+  justify-content: space-around;
+  margin: 75px;
+}
+
+.img-gallery {
+  width: 80%;
+  margin: 10% auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.img-gallery img {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.full-img {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-content: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.full-img img:hover {
+  scale: 80%;
+}
+
+.full-img img {
+  max-height: 88%;
+  margin: 4px;
+  transition: scale 400ms;
+  width: 150px;
+
+}
+
+.full-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* --------------------------------------  Contact ------------------------------*/
+
+.contact {
+  background-image: url(about-background.png);
+}
+
+.contact-form {
+  background: rgb(0, 0, 0);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 53px rgb(255, 132, 32);
+  width: 35%;
+  animation: fadeIn 1s ease-in-out;
+  margin: 5% 32%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-in-out;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.form-group {
+  margin-bottom: 15px;
+  animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#thankYouMessage {
+  color: rgb(255, 132, 32);
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgb(255, 132, 32);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background: rgb(255, 132, 32);
+  border: none;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  animation: buttonFadeIn 1s ease-in-out;
+}
+
+@keyframes buttonFadeIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.contact-form button:hover {
+  background: rgb(255, 0, 0);
+}
+
+/*-----------------------------------  footer --------------------*/
+
+.footer {
+  width: 100%;
+  padding: 0px 10rem;
+  background: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 50px;
+}
+
+.footer h3 {
+  color: white;
+}
+
+.footer a {
+  color: #ffffff;
+  font-size: 40px;
+  margin: 20px;
+}
+
+
+nav .fas {
+  display: none;
+}
+
+/*-----------------------------------  media --------------------*/
+
+/*----------------------------------- Tablet view --------------------*/
+
+@media screen and (max-width: 834px) {
+
+ 
+  nav .fas {
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: rgb(217, 207, 207);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+
+  .home-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 20px;
+    height: 50vh;
+  }
+
+  .home-content p {
+    font-size: 15px;
+  }
+
+  .bg {
+    width: 29%;
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  #mywork {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    background-image: url(background.png);
+  }
+
+  .about-skills {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .skills-circle {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+  }
+
+  .skills-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skills-titles {
+    justify-content: center;
+    flex-direction: row;
+    line-height: 130px;
+    gap: 10px;
+  }
+
+  .imagebox {
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+    margin: 53px;
+  }
+
+  .details {
+    margin: -10px;
+}
+
+.skills-contents td {
+  padding: 8px;
+  width: 84px;
+}
+
+  .work {
+    height: 50vh;
+  }
+
+  .about-img {
+    width: 100px;
+  }
+
+  .work-viewport {
+    height: 35vh;
+  }
+
+  .cards {
+    width: 46px;
+    height: 70px;
+  }
+
+  .textdata h3 {
+    font-size: 10px;
+  }
+
+  .textdata p {
+    font-size: 10px;
+  }
+  .work {
+    height: 37vh;
+  }
+  .contact-form {
+    width: 62%;
+    margin: 4% 20%;
+  }
+
+}
+
+@media screen and (max-width : 768), (orientation:landscape){
+  
+  .home-content {
+    height: 50vh;
+  }
+
+}
+
+
+/*---------------  mobile view------------------*/
+
+
+@media screen and (max-width: 480px) {
+ 
+  .home-content {
+    margin: 340px 5px;
+  }
+  #home {
+    height: 960px;
+}
+
+  .bg {
+    height: 250px;
+    width: 45%;
+  }
+
+ .about {
+    padding: 100px 5px;
+  }
+
+  .about-box {
+    display: contents;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .cards {
+    width: 46px;
+  }
+
+  .textdata h3 {
+    font-size: 10px;
+  }
+
+  .textdata p {
+    font-size: 10px;
+  }
+
+  .contact-form {
+    width: 80%;
+    margin: 2% 10%;
+  }
+
+  .work {
+    height: 37vh;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 7px 5px;
+}
+}
+
